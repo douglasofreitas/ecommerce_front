@@ -1,5 +1,6 @@
 var express = require('express');
 var cookieParser = require('cookie-parser');
+var configurations = require("./.env");
 
 var app = express();
 app.use(express.static('public'));
@@ -13,15 +14,11 @@ app.get('/', function (req, res) {
 //service to get configurations system
 app.get('/configurations', function (req, res) {
    // Prepare output in JSON format
-   response = {
-      first_name:req.query.first_name,
-      last_name:req.query.last_name,
-      var_1: 123
-   };
+   response = configurations;
    res.end(JSON.stringify(response));
 });
 
-var server = app.listen(8081, function () {
+var server = app.listen(configurations.port, function () {
 
    var host = server.address().address
    var port = server.address().port
