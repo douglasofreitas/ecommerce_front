@@ -1,0 +1,32 @@
+{
+  "name": "ecommerce_front",
+  "version": "1.0.0",
+  "description": "React.JS project to e-commerce",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/douglasofreitas/ecommerce_front.git"
+  },
+  "keywords": [
+    "reactjs",
+    "ecommerce",
+    "study"
+  ],
+  "author": "Douglas Oliveira de Freitas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douglasofreitas/ecommerce_front/issues"
+  },
+  "homepage": "https://github.com/douglasofreitas/ecommerce_front#readme"
+}
